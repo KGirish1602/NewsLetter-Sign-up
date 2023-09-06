@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(111, 107, 107);
+    caret-color: transparent;
+}
+#container{
+    width: 600px;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 20px;
+    margin: 40px auto; 
+    padding: 10px ;
+}
+.img-part img{
+    width: 265px;
+}
+.list-items{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.list-items img{
+    width: 13px;
+    padding-right: 5px;
+}
+.subscribe-part{
+    padding: 15px 30px 10px 10px;
+}
+.email-part>input{
+     width: 280px;
+     height: 35px;
+     outline: none;
+     padding-left:5px;
+     border-radius: 5px;
+     border:1px solid;
+     caret-color: black;
+     margin-top: -10px;
+}
+.h-email{
+    display: flex;
+    justify-content: space-between;
+}
+.email-part button{
+    width: 92%;
+    height:40px ;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px 12px;
+
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
+.error{
+    border-color:red;
+    color:red;
+    cursor: no-drop;
+}
+
+.thanks-part{
+    width: 300px;
+    border:1px solid white;
+    margin: 20px auto;
+    padding: 35px 15px 35px 35px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+.thanks-part img{
+    width: 40px;
+}
+.thanks-part h2{
+    font-size: 35px;
+    margin-top: 10px;
+}
+.thanks-part p{
+    font-size: 15px;
+    margin-top: -10px;
+
+}
+.thanks-part button{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 90%;
+    height: 30px;
+}
+
+@media  only screen and (max-width:570px){
+    .hide-b_img{
+        display: none;
+    }
+    .moblie-img img{
+        width:400px;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        justify-items: center;
+        padding: 20px 0px 20px 35px;
+    }
+    .body{
+        background-color: rgb(111, 107, 107);
+        caret-color: transparent;
+    }
+    
+}
+@media  only screen and (min-width:571px){
+    #container{
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+    .moblie-img{
+        display: none;
+    }
+    
+}
+
